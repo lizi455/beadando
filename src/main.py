@@ -10,7 +10,6 @@ OUTPUT_CSV = os.getenv("OUTPUT_CSV", "results/total_length.csv")
 print("=== Road Network Analysis ===\n")
 
 # Adatok beolvasása
-
 print(f"Loading road network from: {INPUT_FILE}")
 gdf = geopandas.read_file(INPUT_FILE)
 
