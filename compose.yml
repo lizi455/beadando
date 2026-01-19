@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  road-analysis:
+    build: .
+    volumes:
+      - ./results:/app/results
+    environment:
+      INPUT_FILE: data/roads.geojson
+      OUTPUT_GEOJSON: results/roads_with_length.geojson
+      OUTPUT_CSV: results/total_length.csv
